@@ -33,7 +33,7 @@ public class IntegrationsController {
     private final String speechToTextUrl = "http://localhost:8081/speech-to-text";
     private final String textToSpeechUrl = "http://localhost:8083/text-to-speech";
 
-    private final String chatGptServiceUrl = "http://192.168.0.106:8082/chat";
+    private final String chatGptServiceUrl = "http://localhost:8082/chat";
 
     private final WebClient webClient = WebClient
             .builder()

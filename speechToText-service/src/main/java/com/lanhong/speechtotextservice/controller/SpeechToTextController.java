@@ -35,7 +35,7 @@ public class SpeechToTextController {
     public ResponseEntity<String> convertSpeechToText(InputStream inputStream) throws ExecutionException, InterruptedException, IOException, UnsupportedAudioFileException {
 
 
-        AudioConfig audioConfig = getAudioConfig("D:\\workplace\\java\\digitalhuman\\test.wav", inputStream);
+        AudioConfig audioConfig = getAudioConfig("/Users/zhangfan/Documents/projects/digitalhuman/test.wav", inputStream);
 
 
         SpeechConfig speechConfig = SpeechConfig.fromSubscription(speechKey, speechRegion);
